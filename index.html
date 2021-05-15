@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Landing page product</title>
+    <title>Basic landing page</title>
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,500,700,900&display=swap" rel="stylesheet">
@@ -12,14 +12,35 @@
     <link rel="stylesheet" href="./assets/css/styles.css">
     <script src="./assets/js/jquery.min.js"></script>
     <script src="./assets/js/bootstrap.min.js"></script>
+    <script>
+        function changeImage1()
+        {
+        var img = document.getElementById("img");
+        img.src="./assets/img/allapp.svg";
+        return false;
+        }
+        function changeImage2()
+        {
+        var img = document.getElementById("img");
+        img.src="./assets/img/Picture1.svg";
+        return false;
+        }
+        function changeImage3()
+        {
+        var img = document.getElementById("img");
+        img.src="./assets/img/Picture2.svg";
+        return false;
+        }
+        </script>
 </head>
 <body>
     <nav class="navbar navbar-expand-md">
         <div class="container">
-                <a href="#" class="logo-link"><img src="./assets/img/logo.png" alt="logo" class="logo"></a>
-                <div class="navbar-toggler " data-toggle="collapse" data-target="#myNavbar">
-                    <img class="hamburger-bar" src="./assets/img/hamburgerbarblack.png" alt="hamburgerbar">
-                </div>
+            <a href="#" class="logo-link"><img src="./assets/img/logo.png" alt="logo" class="logo-img"></a>
+            <div class="logo">Sharktrade</div>
+            <div class="navbar-toggler " data-toggle="collapse" data-target="#myNavbar">
+                <img class="hamburger-bar" src="./assets/img/hamburgerbarblack.png" alt="hamburgerbar">
+            </div>
             <div class="collapse navbar-collapse " id="myNavbar">
                 <ul class="nav navbar-nav ml-auto justify-content-center">
                     <li class="nav-link btn"><a href="#">Pricing</a></li>
@@ -73,18 +94,23 @@
     <div id="team">
         <div class="container">
             <div class="feature-header">How to use</div>
-            <div class="row">
-                    <div class="col-md-8">
-                        <div class="feature-image mx-auto"><img src="./assets/iphonex-newshot.png" alt="" class="feature-image"></div>
+            <div class="row">                 
+                <div class="col-md-3 justify-content-center ">
+                    <div class="btn font-weight-bold" onclick="changeImage1();">Sign up</div>
+                    <div class="btn font-weight-bold" onclick="changeImage2();">Market tracking</div>
+                    <div class="btn font-weight-bold" onclick="changeImage3();">Porfolio</div>
+                </div>
+                <div class="col-md-6">
+                        <div class="text-center"><img id="img" class="feature-image px-auto" src="./assets/img/allapp.svg" alt="" ></div>
+                </div>
+                <div class="col-md-3 justify-content-center text-center">
+                    <div class="my-4">
+                        <a href="#"><img src="./assets/img/apple-store.svg" alt="" class="download"></a>
                     </div>
-                    <div class="col-md-4 justify-content-center text-center">
-                        <div class="my-5">
-                            <a href="#"><img src="./assets/img/apple-store.svg" alt="" class="download"></a>
-                        </div>
-                        <div class="my-5">
-                            <a href="#"><img src="./assets/img/google-play-badge.png" alt="" class="download"></a>
-                        </div>
+                    <div class="my-4">
+                        <a href="#"><img src="./assets/img/google-play-badge.png" alt="" class="download"></a>
                     </div>
+                </div>
             </div>
         </div>
     </div>
@@ -201,7 +227,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-3">
-                    <a href="#" class="logo-link"><img src="./assets/img/logo.png" alt="logo" class="logo"></a>
+                    <a href="#" class="logo-link"><img src="./assets/img/logo.png" alt="logo" class="logo-img-bottom"></a>
                 </div>
                 <div class="col-md-9 justify-content-center">
                     <div class="row">
