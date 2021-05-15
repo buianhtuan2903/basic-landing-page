@@ -4,26 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Basic landing page</title>
-    <link rel="stylesheet" href="./assets/bootstrap.min.css">
+    <title>Landing page product</title>
+
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,500,700,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles.css">
-    <script src="./assets/jquery.min.js"></script>
-    <script src="./assets/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
 </head>
 <body>
     <nav class="navbar navbar-expand-md">
         <div class="container">
-                <a href="#" class="logo-link"><img src="./assets/logo.png" alt="logo" class="logo"></a>
-                <button class="navbar-toggler ml-auto mr-2" type="button" data-toggle="collapse" data-target="#myNavbar">
-                    <img class="hamburger-bar" src="./assets/hamburgerbar.png" alt="hamburgerbar">
-                </button>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item"><a href="#">Features</a></li>
-                    <li class="nav-item"><a href="#">Pricing</a></li>
-                    <li class="nav-item"><a href="#" id="buy">Buy now</a></li>
+                <a href="#" class="logo-link"><img src="./assets/img/logo.png" alt="logo" class="logo"></a>
+                <div class="navbar-toggler " data-toggle="collapse" data-target="#myNavbar">
+                    <img class="hamburger-bar" src="./assets/img/hamburgerbarblack.png" alt="hamburgerbar">
+                </div>
+            <div class="collapse navbar-collapse " id="myNavbar">
+                <ul class="nav navbar-nav ml-auto justify-content-center">
+                    <li class="nav-link btn"><a href="#">Pricing</a></li>
+                    <li class="nav-link btn" ><a href="#" class="px-4 py-2" id="signup-reverse">Sign up</a></li>
                 </ul>
             </div>
         </div>
@@ -33,15 +33,14 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 text-white justify-content-center">
-                    <div class="landing-title">The best altenative to fight the way</div>
-                    <div class="landing-text">Join us now and enjoy freedom road</div>
+                    <div class="landing-title">Trading hustler platform</div>
+                    <div class="landing-text">Zero fee, copy trade feature and everyday market analytics. Sign up now and enjoy freedom trading</div>
                     <div class="row mt-4">
-                        <div class="btn" id="buy">Buy now</div>
-                        <div class="btn" id="request">Request demo</div>
+                        <div class="btn px-4" id="signup">Sign up</div>
                     </div> 
                 </div>
                 <div class="col-md-6 order-first order-md-last">
-                        <img src="./assets/phone.png" alt="">
+                        <img src="./assets/img/phone.png" alt="" class="banner-image">
                     </div>
             </div>
         </div>
@@ -49,29 +48,43 @@
 
     <div id="feature">
         <div class="container">
-            <div class="feature-header">Change the way you fight</div>
+            <div class="feature-header">Change the way you trade</div>
             <div class="feature-text mb-3">And never look back again</div>
             <div class="row">
                 <div class="col-md-4 px-5">
-                    <div class="feature-icon mx-auto"><img src="./assets/feature1.jpg" alt=""></div>
-                    <div class="feature-title">Always on target</div>
-                    <div class="feature-text">We are fully compatible 
-                        with the most common study case and your product 
-                        visions for tomorrow</div>
+                    <div class="feature-icon mx-auto"><img src="./assets/img/feature1.jpg" alt=""></div>
+                    <div class="feature-title">Fast</div>
+                    <div class="feature-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui beatae impedit consequatur? Eveniet, sapiente.</div>
                 </div>
                 <div class="col-md-4 px-5">
-                    <div class="feature-icon mx-auto"><img src="./assets/feature2.jpg" alt=""></div>
-                    <div class="feature-title">Great performance</div>
-                    <div class="feature-text">Get what you want in a
-                        fraction of a second, for ever long time later</div>
+                    <div class="feature-icon mx-auto"><img src="./assets/img/feature2.jpg" alt=""></div>
+                    <div class="feature-title">Modification</div>
+                    <div class="feature-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur placeat quae, modi harum minus voluptates!</div>
                 </div>
                 <div class="col-md-4 px-5">
-                    <div class="feature-icon mx-auto"><img src="./assets/feature3.jpg" alt=""></div>
-                    <div class="feature-title">Always on target</div>
-                    <div class="feature-text">We are fully compatible 
-                        with the most common study case and your product 
-                        visions for tomorrow</div>
+                    <div class="feature-icon mx-auto"><img src="./assets/img/feature3.jpg" alt=""></div>
+                    <div class="feature-title">Secure</div>
+                    <div class="feature-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ab, labore aperiam facilis illo ducimus!</div>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="team">
+        <div class="container">
+            <div class="feature-header">How to use</div>
+            <div class="row">
+                    <div class="col-md-8">
+                        <div class="feature-image mx-auto"><img src="./assets/iphonex-newshot.png" alt="" class="feature-image"></div>
+                    </div>
+                    <div class="col-md-4 justify-content-center text-center">
+                        <div class="my-5">
+                            <a href="#"><img src="./assets/img/apple-store.svg" alt="" class="download"></a>
+                        </div>
+                        <div class="my-5">
+                            <a href="#"><img src="./assets/img/google-play-badge.png" alt="" class="download"></a>
+                        </div>
+                    </div>
             </div>
         </div>
     </div>
@@ -99,8 +112,8 @@
                         <div class="card-header">PREMIUM
                         </div>
                         <div class="card-body">                        
-                            <div class="card-text text-center">Great features</div>
-                            <div class="card-text text-center">More storage</div>
+                            <div class="card-text text-center">Everyday tips</div>
+                            <div class="card-text text-center">Market analytics</div>
                             <div class="card-text text-center">Full power</div>
                             <div class="card-text text-center">More bandwidth</div>
                             <div class="price text-center">$4.99</div>
@@ -112,7 +125,7 @@
                     <div class="card">
                         <div class="card-header">MANAGEMENT </div>
                         <div class="card-body">                        
-                            <div class="card-text text-center">Greater features</div>
+                            <div class="card-text text-center">Copy trade</div>
                             <div class="card-text text-center">Best investment</div>
                             <div class="card-text text-center">24/24 support</div>
                             <div class="card-text text-center">Getting on time</div>
@@ -138,21 +151,11 @@
         </div>
     </div>
 
-    <div id="team">
-        <div class="container">
-            <div class="feature-header">Our team</div>
-            <div class="row">
-Làm card carousel team
-            </div>
-        </div>
-    </div>
-
     <div id="getintouch">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
                     <div class="feature-header">Get in touch with us</div>
-                    <div class="feature-text mb-3">We love digital postcards</div>
                     <div >Lorem, ipsum dolor sit amet consectetur 
                         adipisicing elit. Saepe tenetur rem perspiciatis consequuntur 
                         esse harum mollitia  ipsam corporis eius soluta quis quasi ducimus  
@@ -180,12 +183,15 @@ Làm card carousel team
     <div id="work">
         <div class="container">
             <div class="row" >
-                <div id="social-bar">
-                    <a href="https://www.facebook.com/">
-                        <img class="social-icon" src="./assets/facebook.png" alt="facebook">
-                    </a>
-                    <a href="https://www.instagram.com/">
-                        <img class="social-icon" src="./assets/instagram.png" alt="instagram"></a>
+                <div id="social-bar" class="mx-auto">
+                    <a href="https://www.facebook.com/" class="social-link">
+                        <img class="social-icon" src="./assets/img/fb-logo.svg" alt="facebook"></a>
+                    <a href="https://www.instagram.com/" class="social-link">
+                        <img class="social-icon" src="./assets/img/twitter-logo.svg" alt="twitter"></a>
+                    <a href="https://www.instagram.com/" class="social-link">
+                        <img class="social-icon" src="./assets/img/ig-logo.png" alt="instagram"></a>
+                    <a href="https://www.instagram.com/" class="social-link">
+                        <img class="social-icon" src="./assets/img/linkedin.svg" alt="linkedin"></a>
                 </div>
             </div>
         </div>
@@ -195,7 +201,7 @@ Làm card carousel team
         <div class="container">
             <div class="row">
                 <div class="col-md-3">
-                    <a href="#" class="logo-link"><img src="./assets/logo.png" alt="logo" class="logo"></a>
+                    <a href="#" class="logo-link"><img src="./assets/img/logo.png" alt="logo" class="logo"></a>
                 </div>
                 <div class="col-md-9 justify-content-center">
                     <div class="row">
