@@ -46,10 +46,7 @@ li{
     color: rgb(98, 112, 235);
 }
 
-.logo-img-bottom{
-    max-height: 100px;
-    width: auto;
-}
+
 
 .navbar-header{
     padding: 0px 16px;
@@ -301,3 +298,7 @@ input:focus, textarea:focus{
     padding-top: 20px; 
 }
 
+.logo-img-bottom{
+    max-height: 100px;
+    width: auto;
+}
