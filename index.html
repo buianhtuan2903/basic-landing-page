@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Basic landing page</title>
-
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css?family=Lato:400,500,700,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/styles.css">
@@ -31,9 +30,9 @@
         img.src="./assets/img/Picture2.svg";
         return false;
         }
-        </script>
+    </script>
 </head>
-<body>
+<div>
     <nav class="navbar navbar-expand-md">
         <div class="container">
             <a href="#" class="logo-link"><img src="./assets/img/logo.png" alt="logo" class="logo-img"></a>
@@ -43,8 +42,7 @@
             </div>
             <div class="collapse navbar-collapse " id="myNavbar">
                 <ul class="nav navbar-nav ml-auto justify-content-center">
-                    <li class="nav-link btn"><a href="#">Pricing</a></li>
-                    <li class="nav-link btn" ><a href="#" class="px-4 py-2" id="signup-reverse">Sign up</a></li>
+                    <li class="nav-link btn px-4" id="signup-reverse"><a href="#" class="text-white">Sign up</a></li>
                 </ul>
             </div>
         </div>
@@ -67,33 +65,33 @@
         </div>
     </div>
 
-    <div id="feature">
+    <div class="py-5 border-bottom">
         <div class="container">
-            <div class="feature-header">Change the way you trade</div>
-            <div class="feature-text mb-3">And never look back again</div>
+            <div class="heading">Change the way you trade</div>
+            <div class="mb-4 text-center">And never look back again</div>
             <div class="row">
-                <div class="col-md-4 px-5">
+                <div class="col-lg-4 px-5">
                     <div class="feature-icon mx-auto"><img src="./assets/img/feature1.jpg" alt=""></div>
-                    <div class="feature-title">Fast</div>
+                    <div class="title">Fast</div>
                     <div class="feature-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui beatae impedit consequatur? Eveniet, sapiente.</div>
                 </div>
-                <div class="col-md-4 px-5">
+                <div class="col-lg-4 px-5">
                     <div class="feature-icon mx-auto"><img src="./assets/img/feature2.jpg" alt=""></div>
-                    <div class="feature-title">Modification</div>
+                    <div class="title">Modification</div>
                     <div class="feature-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur placeat quae, modi harum minus voluptates!</div>
                 </div>
-                <div class="col-md-4 px-5">
+                <div class="col-lg-4 px-5">
                     <div class="feature-icon mx-auto"><img src="./assets/img/feature3.jpg" alt=""></div>
-                    <div class="feature-title">Secure</div>
+                    <div class="title">Secure</div>
                     <div class="feature-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ab, labore aperiam facilis illo ducimus!</div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div id="team">
+    <div class="bg-light py-5 border-bottom">
         <div class="container">
-            <div class="feature-header">How to use</div>
+            <div class="heading">How to use</div>
             <div class="row">                 
                 <div class="col-md-3 justify-content-center ">
                     <div class="btn font-weight-bold" onclick="changeImage1();">Sign up</div>
@@ -105,70 +103,68 @@
                 </div>
                 <div class="col-md-3 justify-content-center text-center">
                     <div class="my-4">
-                        <a href="#"><img src="./assets/img/apple-store.svg" alt="" class="download"></a>
+                        <a href="#"><img src="./assets/img/apple-store.svg" alt="" class="download-btn"></a>
                     </div>
                     <div class="my-4">
-                        <a href="#"><img src="./assets/img/google-play-badge.png" alt="" class="download"></a>
+                        <a href="#"><img src="./assets/img/google-play-badge.png" alt="" class="download-btn"></a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-    <div id="pricing">
+    <div class="py-5 border-bottom">
         <div class="container">
-            <div class="feature-header">Choose your plan</div>
-            <div class="feature-text mb-5">Pay only what you need</div>
+            <div class="heading">Choose your plan</div>
+            <div class="mb-4 text-center">Pay only what you need</div>
             <div class="row">
-                <div class="col-md-3">
-                    <div class="card">
+                <div class="col-lg-3">
+                    <div class="card mb-4" data-tilt data-tilt-max="20" data-tilt-speed="1000" data-tilt-perspective="1000">
                         <div class="card-header">BASIC</div>
                         <div class="card-body">                        
-                            <div class="card-text text-center">Free to join</div>
-                            <div class="card-text text-center">Free to use</div>
-                            <div class="card-text text-center">Always on top</div>
-                            <div class="card-text text-center">Share with friends</div>
-                            <div class="price text-center">FREE</div>
+                            <div class="py-2 text-center">Free to join</div>
+                            <div class="py-2 text-center">Free to use</div>
+                            <div class="py-2 text-center">Always on top</div>
+                            <div class="py-2 text-center">Share with friends</div>
+                            <div class="heading py-3 text-center">FREE</div>
                             <div class="btn btn-price justify-content-center mb-3">Choose</div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="card">
-                        <div class="card-header">PREMIUM
-                        </div>
+                <div class="col-lg-3">
+                    <div class="card mb-4" data-tilt data-tilt-max="20" data-tilt-speed="1000" data-tilt-perspective="1000">
+                        <div class="card-header">PREMIUM</div>
                         <div class="card-body">                        
-                            <div class="card-text text-center">Everyday tips</div>
-                            <div class="card-text text-center">Market analytics</div>
-                            <div class="card-text text-center">Full power</div>
-                            <div class="card-text text-center">More bandwidth</div>
-                            <div class="price text-center">$4.99</div>
+                            <div class="py-2 text-center">Everyday tips</div>
+                            <div class="py-2 text-center">Market analytics</div>
+                            <div class="py-2 text-center">Full power</div>
+                            <div class="py-2 text-center">More bandwidth</div>
+                            <div class="heading py-3 text-center">$4.99</div>
                             <div class="btn btn-price justify-content-center mb-3">Choose</div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="card">
-                        <div class="card-header">MANAGEMENT </div>
+                <div class="col-lg-3">
+                    <div class="card mb-4" data-tilt data-tilt-max="20" data-tilt-speed="1000" data-tilt-perspective="1000">
+                        <div class="card-header">MANAGEMENT</div>
                         <div class="card-body">                        
-                            <div class="card-text text-center">Copy trade</div>
-                            <div class="card-text text-center">Best investment</div>
-                            <div class="card-text text-center">24/24 support</div>
-                            <div class="card-text text-center">Getting on time</div>
-                            <div class="price text-center">$9.99</div>
+                            <div class="py-2 text-center">Copy trade</div>
+                            <div class="py-2 text-center">Best investment</div>
+                            <div class="py-2 text-center">24/24 support</div>
+                            <div class="py-2 text-center">Getting on time</div>
+                            <div class="heading py-3 text-center">$9.99</div>
                             <div class="btn btn-price justify-content-center mb-3">Choose</div>                            
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="card">
+                <div class="col-lg-3">
+                    <div class="card mb-4" data-tilt data-tilt-max="20" data-tilt-speed="1000" data-tilt-perspective="1000">
                         <div class="card-header">ENTERPRISE</div>
                         <div class="card-body">                        
-                            <div class="card-text text-center">Best features</div>
-                            <div class="card-text text-center">Support on the field</div>
-                            <div class="card-text text-center">Call what you need</div>
-                            <div class="card-text text-center">Never expire</div>
-                            <div class="price text-center">$19.99</div>
+                            <div class="py-2 text-center">Best features</div>
+                            <div class="py-2 text-center">Support on the field</div>
+                            <div class="py-2 text-center">Call what you need</div>
+                            <div class="py-2 text-center">Never expire</div>
+                            <div class="heading py-3 text-center">$19.99</div>
                             <div class="btn btn-price justify-content-center mb-3">Choose</div>
                         </div>
                     </div>
@@ -177,84 +173,70 @@
         </div>
     </div>
 
-    <div id="getintouch">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="feature-header">Get in touch with us</div>
-                    <div >Lorem, ipsum dolor sit amet consectetur 
-                        adipisicing elit. Saepe tenetur rem perspiciatis consequuntur 
-                        esse harum mollitia  ipsam corporis eius soluta quis quasi ducimus  
-                        repellat aut ipsa ratione, laudantium assumenda dolorem. Iste  
-                        maiores quaerat animi perferendis minus.</div>
-                </div>
-                <div class="col-md-6">
-                    <div class="card-body">
-                        <div class="form-group">
-                        <input type="text" class="form-control" id="Name" placeholder="Your name">
-                        </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control" id="Email" placeholder="Your email @email.com">
-                        </div>
-                        <div class="form-group">
-                            <textarea class="form-control" id="Feedback" rows="4" placeholder="Your message"></textarea>
-                        </div>
-                        <button class="btn btn-send text-center">Send</button>
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="heading">Get in touch with us</div>
+                <div >Lorem, ipsum dolor sit amet consectetur 
+                    adipisicing elit. Saepe tenetur rem perspiciatis consequuntur 
+                    esse harum mollitia  ipsam corporis eius soluta quis quasi ducimus  
+                    repellat aut ipsa ratione, laudantium assumenda dolorem. Iste  
+                    maiores quaerat animi perferendis minus.</div>
+            </div>
+            <div class="col-md-6">
+                <div class="card-body">
+                    <div class="form-group">
+                    <input type="text" class="form-control" id="Name" placeholder="Your name">
                     </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="Email" placeholder="Your email @email.com">
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" id="Feedback" rows="4" placeholder="Your message"></textarea>
+                    </div>
+                    <button class="btn btn-send text-center">Send</button>
                 </div>
             </div>
         </div>
     </div>
 
-    <div id="work">
-        <div class="container">
-            <div class="row" >
-                <div id="social-bar" class="mx-auto">
-                    <a href="https://www.facebook.com/" class="social-link">
-                        <img class="social-icon" src="./assets/img/fb-logo.svg" alt="facebook"></a>
-                    <a href="https://www.instagram.com/" class="social-link">
-                        <img class="social-icon" src="./assets/img/twitter-logo.svg" alt="twitter"></a>
-                    <a href="https://www.instagram.com/" class="social-link">
-                        <img class="social-icon" src="./assets/img/ig-logo.png" alt="instagram"></a>
-                    <a href="https://www.instagram.com/" class="social-link">
-                        <img class="social-icon" src="./assets/img/linkedin.svg" alt="linkedin"></a>
-                </div>
+    <div id="work" class="row py-3">
+            <div class="mx-auto">
+                <a href="https://www.facebook.com/" class="social-link">
+                    <img class="social-icon" src="./assets/img/fb-logo.svg" alt="facebook"></a>
+                <a href="https://www.instagram.com/" class="social-link">
+                    <img class="social-icon" src="./assets/img/twitter-logo.svg" alt="twitter"></a>
+                <a href="https://www.instagram.com/" class="social-link">
+                    <img class="social-icon" src="./assets/img/ig-logo.png" alt="instagram"></a>
+                <a href="https://www.instagram.com/" class="social-link">
+                    <img class="social-icon" src="./assets/img/linkedin.svg" alt="linkedin"></a>
             </div>
-        </div>
     </div>
 
-    <footer class="copyright">
+    <div class="copyright py-2">
         <div class="container">
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-sm-3">
                     <a href="#" class="logo-link"><img src="./assets/img/logo.png" alt="logo" class="logo-img-bottom"></a>
                 </div>
-                <div class="col-md-9 justify-content-center">
-                    <div class="row">
-                        <div class="col-sm-3"></div>
-                        <div class="col-sm-3 justify-content-center">
-                            <div class="footer-item">Our team</div>
-                        </div>
-                        <div class="col-sm-3 justify-content-center">
-                            <div class="footer-item">Work with us</div>
-                        </div>
-                        <div class="col-sm-3 justify-content-center">
-                            <div class="footer-item">Contact</div>
-                        </div>
-                    </div>
-                </div>
+                <a class="col-sm-3 text-white justify-content-center" href="#">Our team</a>
+                <a class="col-sm-3 text-white justify-content-center" href="#">Work with us</a>
+                <a class="col-sm    -3 text-white justify-content-center" href="#">Contact</a>
             </div>
         </div>
-    </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js" integrity="sha512-SttpKhJqONuBVxbRcuH0wezjuX+BoFoli0yPsnrAADcHsQMW8rkR84ItFHGIkPvhnlRnE2FaifDOUw+EltbuHg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="/__/firebase/7.5.1/firebase-app.js"></script>
+    <!-- <script src="/__/firebase/7.5.1/firebase-app.js"></script> -->
 
     <!-- TODO: Add SDKs for Firebase products that you want to use
         https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script src="/__/firebase/7.5.1/firebase-analytics.js"></script>
+    <!-- <script src="/__/firebase/7.5.1/firebase-analytics.js"></script> -->
 
     <!-- Initialize Firebase -->
-    <script src="/__/firebase/init.js"></script>
+    <!-- <script src="/__/firebase/init.js"></script> -->
+
 </body>
 </html>
