@@ -4,7 +4,7 @@
     padding: 0;
     font-size: 16px;
     scroll-behavior: smooth;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 a, a:link, a:hover{
@@ -50,12 +50,7 @@ li{
     color: rgb(98, 112, 235);
 }
 
-.hamburger-bar{
-    height: 46px;
-    width: auto;
-}
-
-.show > ul > .nav-item, .collapsing > ul > .nav-item{
+.show > ul > .nav-link, .collapsing > ul > .nav-link{
     width: 100%;
     text-align: center;
 }
@@ -143,6 +138,9 @@ li{
     max-height: 330px;
 }   
 
+.download-btn{
+    width: 200px;
+}
 /* Pricing */
 .card-header{
     text-align: center;
@@ -173,9 +171,7 @@ li{
     font-size: 1.2rem;
 }
 
-.download-btn{
-    width: 200px;
-}
+
 
 /* Get in touch */
 .btn-send, .btn-send:hover{
@@ -218,8 +214,8 @@ input:focus, textarea:focus, .btn-send:focus, .signup-reverse:focus{
     transition-duration: 0.4s;
 }
 
-/* Copyright */
-.copyright{
+/* Bottomnav */
+.bottomnav{
     color: white;
     background-color: #1A1A1F;
 }
