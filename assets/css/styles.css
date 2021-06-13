@@ -141,6 +141,7 @@ li{
 .download-btn{
     width: 200px;
 }
+
 /* Pricing */
 .card-header{
     text-align: center;
@@ -170,8 +171,6 @@ li{
     font-weight: 700;
     font-size: 1.2rem;
 }
-
-
 
 /* Get in touch */
 .btn-send, .btn-send:hover{
